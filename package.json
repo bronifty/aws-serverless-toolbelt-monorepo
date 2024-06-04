@@ -1,0 +1,29 @@
+{
+  "name": "aws-serverless-toolbelt-monorepo",
+  "version": "20240604",
+  "description": "AWS Serverless Toolbelt Monorepo",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter marcs-observable build",
+    "start": "pnpm -r --parallel start",
+    "clean": "rm -rf node_modules packages/**/node_modules packages/**/build packages/**/dist apps/**/node_modules apps/**/dist",
+    "test": "pnpm --filter marcs-observable test",
+    "web": "pnpm --filter web",
+    "marcs-observable": "pnpm --filter @bronifty/marcs-observable",
+    "publish": "pnpm --filter @bronifty/marcs-observable publish",
+    "nx:build": "npx nx build @bronifty/marcs-observable",
+    "nx:engine-install": "npx nx engine-install aws-serverless-toolbelt",
+    "nx:engine-build": "npx nx engine-build aws-serverless-toolbelt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.2.0"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.1.1+sha512.14e915759c11f77eac07faba4d019c193ec8637229e62ec99eefb7cf3c3b75c64447882b7c485142451ee3a6b408059cdfb7b7fa0341b975f12d0f7629c71195",
+  "devDependencies": {
+    "nx": "^19.1.0"
+  }
+}
