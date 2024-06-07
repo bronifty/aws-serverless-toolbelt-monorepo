@@ -9,5 +9,5 @@ source $SCRIPT_DIR/../variables.sh
 API_NAME="api"
 API_ID=$(aws apigatewayv2 get-apis --query "Items[?Name=='${API_NAME}'].ApiId" --output json | jq -r '.[]')
 echo ${API_ID}
-aws apigatewayv2 get-integrations --api-id ${API_ID} > ${SCRIPT_DIR}/${API_NAME}-integrations.json
+aws apigatewayv2 get-integrations --api-id ${API_ID} > ${SCRIPT_DIR}/output/${API_NAME}-integrations.json
 

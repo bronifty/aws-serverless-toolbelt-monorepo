@@ -8,5 +8,5 @@ FUNCTION_NAME="function"
 # output lambda info to lambda_info.txt
    aws lambda get-function --function-name $FUNCTION_NAME > $SCRIPT_DIR/lambda_info.json
 FUNCTION_NAME="function"
-aws lambda get-function --function-name ${FUNCTION_NAME} --query "Configuration" --output json > $SCRIPT_DIR/function_info.json
+aws lambda get-function --function-name ${FUNCTION_NAME} --query "Configuration" --output json > $SCRIPT_DIR/output/function_info.json
 

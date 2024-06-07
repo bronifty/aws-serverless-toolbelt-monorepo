@@ -6,5 +6,5 @@ source $SCRIPT_DIR/../variables.sh
 
 
 API_NAME="api"
-aws apigatewayv2 get-apis --query "Items[?Name=='${API_NAME}']" --output json > $SCRIPT_DIR/api_info.json
+aws apigatewayv2 get-apis --query "Items[?Name=='${API_NAME}']" --output json > $SCRIPT_DIR/output/api_info.json
 
