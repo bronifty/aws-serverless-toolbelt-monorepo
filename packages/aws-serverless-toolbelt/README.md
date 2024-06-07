@@ -1,7 +1,6 @@
 # AWS Serverless Toolbelt
 
 - https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-function.html
-- https://thepassle.netlify.app/blog/practical-barrel-file-guide-for-library-authors
 
 steps:
 
